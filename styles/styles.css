@@ -35,11 +35,11 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: var(--padding-large)
+    padding: var(--padding-large);
 }
 
 h1 {
-    color: var(--heading-text-color)
+    color: var(--heading-text-color);
 }
 
 main img {
@@ -52,10 +52,10 @@ main img {
 }
 
 aside h2 {
-    position: relative;
-    color: white;
+    position: absolute;
     top: 47px;
     left: 10px;
+    color: white;
 }
 
 p {
