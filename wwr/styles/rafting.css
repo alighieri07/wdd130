@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #6FD6D9;
+    --secondary-color: #06A2A5;
+    --accent1-color: #A8B97F;
+    --accent2-color: #545454;
+}
+
+header {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+header img {
+    width: 200px; 
+    height: 20%;
+    margin-right: 80px; 
+    margin-left: 70px;
+}
+
+nav {
+    display: flex;
+    
+}
+
+nav a {
+    color: white; 
+    text-decoration: none; 
+    font-size:2rem;
+    margin-left: 60px;
+}
+
+nav a:hover {
+    color: var(--accent1-color); 
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #ffffff; 
+    color: var(--accent2-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+h1, h2 {
+    font-family: 'Intro Rust', sans-serif; 
+    color: var(--primary-color); 
+}
+
+footer {
+    background-color: var(--accent2-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0; 
+    text-align: center;
+}
+
+footer .social-media {
+    margin: 5px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
+}
+
+a {
+    color: var(--primary-color); 
+    text-decoration: none;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+header a {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+img {
+    border-radius: 30px; 
+    margin-bottom: 1rem; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.hero {
+    position: relative; 
+}
+
+.hero img {
+    display: block; 
+    width: 100%;
+    height: auto; 
+}
+
+.hero h1 {
+    position: absolute; 
+    top: 20%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 4rem; 
+    color: white; 
+    font-weight: bold;
+}
+
+.hero article {
+    position: absolute; 
+    border-radius: 30px; 
+    bottom: 10%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    color: white; 
+    max-width: 100%; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero article img {
+    margin-left: 15px; 
+    width: 120px; 
+    height: auto;
+    flex-shrink: 0; 
+}
