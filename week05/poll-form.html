@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 - HTML Form - User Poll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="poll-form.css">
+</head>
+<body>
+<header>
+    <h1>WDD 130 - Your name - HTML Form - User Poll</h1>
+</header>
+<main>
+    <form>
+        <fieldset>
+            <legend>Contact information</legend>
+            <!-- Div for fullname and email -->
+            <div class="form-item column2">
+                <label>Full name: <input type="text" id="fullname" name="fullname"></label>
+            </div>
+            <div class="form-item column2">
+                <label>Email: <input type="email" id="useremail" name="useremail"></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Questions</legend>
+            <!-- Div for browser options -->
+            <div class="form-item column1">
+                <label for="browser">What is your favorite browser?</label>
+                <select>
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                    <option value="brave">Brave</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- Div for pet question -->
+            <div class="form-item column1">
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+            </div>
+            <!-- Div for feedback question -->
+            <div class="form-item">
+                <label for="feedback">List the places you have lived.</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Melipilla Chile, Santiago Chile, Antofagasta Chile"></textarea>
+            </div>
+        </fieldset>
+        <button type="submit">Submit Poll</button>
+    </form>
+</main>
+<footer>
+    <p>©2025 - HTML Form - User Poll Activity - Alighieri Vergara</p>
+</footer>
+</body>
+</html>
