@@ -6,29 +6,33 @@
 }
 
 header {
-    display: flex; 
-    justify-content: flex-start; 
+    display: grid; 
+    grid-template-columns: 2fr auto 1fr;
     align-items: center; 
     padding: 20px; 
+    width: 100%;
 }
 
 header img {
-    width: 200px; 
-    height: 20%;
-    margin-right: 80px; 
-    margin-left: 70px;
+    width: 300px; 
+    height: auto;
+    margin-right: 30px; 
+    margin-left: 30px;
+    justify-self: center;
 }
 
 nav {
     display: flex;
-    
+    justify-content: center;
+    grid-column: 2;
 }
 
 nav a {
     color: white; 
     text-decoration: none; 
-    font-size:2rem;
-    margin-left: 60px;
+    font-size:1.6rem;
+    font-weight: bold;
+    padding: 0 10px;
 }
 
 nav a:hover {
@@ -43,42 +47,16 @@ body {
     padding: 0;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 20px; 
-}
-
 h1, h2 {
     font-family: 'Intro Rust', sans-serif; 
     color: var(--primary-color); 
 }
 
-footer {
-    background-color: var(--accent2-color);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-footer p {
-    margin: 0; 
-    text-align: center;
-}
-
-footer .social-media {
-    margin: 5px 0;
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px; 
-}
 
 a {
     color: var(--primary-color); 
     text-decoration: none;
-    margin-left: 2rem;
-    margin-right: 1rem;
+
 }
 
 header a {
@@ -99,12 +77,15 @@ img {
 
 .hero {
     position: relative; 
+    margin: 0 20px;
+    padding-top: 40px;
 }
 
 .hero img {
     display: block; 
     width: 100%;
     height: auto; 
+    border-radius: 20px;
 }
 
 .hero h1 {
@@ -118,24 +99,116 @@ img {
 }
 
 .hero article {
-    position: absolute; 
-    border-radius: 30px; 
-    bottom: 10%; 
+    position: absolute;
+    top: 50%; 
     left: 50%; 
-    transform: translateX(-50%); 
-    background-color: rgba(0, 0, 0, 0.7); 
-    padding: 20px;
-    color: white; 
-    max-width: 100%; 
-    text-align: center; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    color: white;
+    width: calc(100% - 60px);
+    box-sizing: border-box;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
 .hero article img {
-    margin-left: 15px; 
-    width: 120px; 
+    margin-left: 15px;
+    width: 120px;
     height: auto;
-    flex-shrink: 0; 
+    flex-shrink: 0;
+    margin-left: 20px; 
+    order: 1; 
+}
+
+.history {
+    display: grid; 
+    grid-template-columns: 1fr auto 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 20px; 
+    padding: 20px;
+    align-items: center; 
+}
+
+.history h2 {
+    grid-column: 1 / -1; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.history .left-text {
+    text-align: justify;
+    margin-right: 50px; 
+    margin-left: 70px
+}
+
+.history .right-text {
+    text-align: justify;
+    margin-left: 50px; 
+    margin-right: 70px
+}
+
+.history img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    justify-self: center; 
+
+}
+
+section {
+    text-align: center;  
+}
+
+section h2 {
+    font-family: 'Intro Rust', sans-serif;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;  
+}
+
+
+.images-container {
+    display: flex;  
+    justify-content: center;  
+
+}
+
+
+.images-container img {
+    width: 200px;  
+    height: auto;
+    margin: auto;  
+    margin-bottom: 40px;
+    border-radius: 5px; 
+}
+
+footer {
+    display: grid; 
+    justify-content: center; 
+    align-items: center; 
+    grid-template-columns: 1fr auto 1fr; 
+    background-color: var(--accent2-color);
+    color: white;
+    padding: 20px 0;
+    width: 100%; 
+}
+
+footer p {
+    grid-column: 2;
+    text-align: center;
+    margin: 0;
+    flex-grow: 1; 
+}
+
+footer .social-media {
+    grid-column: 3;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    gap: 50px;
 }
