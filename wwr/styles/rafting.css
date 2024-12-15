@@ -52,11 +52,9 @@ h1, h2 {
     color: var(--primary-color); 
 }
 
-
 a {
     color: var(--primary-color); 
     text-decoration: none;
-
 }
 
 header a {
@@ -114,7 +112,6 @@ img {
     justify-content: center;
 }
 
-
 .hero article img {
     margin-left: 15px;
     width: 120px;
@@ -157,7 +154,6 @@ img {
     object-fit: cover; 
     border-radius: 10px; 
     justify-self: center; 
-
 }
 
 section {
@@ -171,13 +167,10 @@ section h2 {
     margin-bottom: 20px;  
 }
 
-
 .images-container {
     display: flex;  
     justify-content: center;  
-
 }
-
 
 .images-container img {
     width: 200px;  
@@ -211,4 +204,151 @@ footer .social-media {
     justify-content: flex-end;
     margin-right: 50px;
     gap: 50px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 20px;
+}
+
+.block h1 {
+    font-size: 3em;
+}
+
+.block p {
+    font-size: 1.5em;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.block1, .block2 {
+    flex: 1;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.callboxes {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.callboxes div {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 40px; 
+    background-color: rgba(6, 162, 165, 0.3); 
+    padding: 4px; 
+    border-radius: 30px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    max-width: 500px; 
+}
+
+.reviews {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.reviews figure {
+    text-align: center; 
+}
+
+.reviews img {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-bottom: 10px; 
+}
+
+.reviews figcaption {
+    font-size: 16px; 
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+form {
+    width: 650px; 
+    margin: 0 auto; 
+    padding: 1rem; 
+    border-radius: 1rem; 
+    background-color: rgba(84, 84, 84, 0.1);; 
+    display: grid; 
+}
+
+fieldset {
+    border: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--accent1-color); 
+    font-size: 1.3em;
+}
+
+label {
+    display: block;   
+    margin-bottom: 0.5rem; 
+    font-size: 1.1rem; 
+    color: var(--accent1-color); 
+    text-align: left; 
+}
+
+input, select, textarea {
+    width: 100%; 
+    padding: 0.5rem; 
+    font-size: 1.1rem; 
+    border: 1px solid #ccc; 
+    border-radius: 0.5rem; 
+    box-sizing: border-box; 
+}
+
+button {
+    margin: 1rem 0; 
+    background-color: var(--primary-color); 
+    color: #fff; 
+    border: none; 
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem; 
+    font-size: 1.1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: var(--secondary-color); 
+} 
+
+iframe {
+    width: 650px;  
+    height: 200px; 
+    border: none;
+    margin-top: 3rem;
+}
+
+.wireframe-link {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wireframe-link a {
+    text-decoration: none; 
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+.wireframe-link img {
+    width: 200px;
+    height: auto;
 }
