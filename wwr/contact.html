@@ -23,6 +23,7 @@
             <a href="contact.html">Contact us</a>
         </nav>
     </header>
+    <main>
     <section class="block">
         <article class="block1">
             <h1>Contact Us</h1>
@@ -71,12 +72,17 @@
                     <legend>Write your question or comment!</legend>
                     <div class="form-item column1">
                         <label for="subject">Pick the subject</label>
-                        <select id="subject" name="subject">
-                            <option value="edge">--Select</option>
-                            <option value="general">General Inquiry</option>
-                            <option value="reservation">Reservation Question</option>
-                            <option value="suggestion">Website Suggestion</option>
-                        </select>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="subject" value="general"> General Inquiry
+                            </label>
+                            <label>
+                                <input type="radio" name="subject" value="reservation"> Reservation Question
+                            </label>
+                            <label>
+                                <input type="radio" name="subject" value="suggestion"> Website Suggestion
+                            </label>
+                        </div>
                     </div>
                     <div class="form-item">
                         <label for="feedback">Your comment here:</label>
@@ -87,13 +93,15 @@
                         <input type="checkbox" id="newsletter" name="newsletter">
                     </div>
                 </fieldset>
+                <label>Click to Submit</label>
                 <button type="submit">Submit</button>
             </form>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d106543.34807531025!2d-70.68799905156249!3d-33.43680863894004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1734215552713!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="iframe-style" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d106543.34807531025!2d-70.68799905156249!3d-33.43680863894004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1734215552713!5m2!1ses!2scl"></iframe>
             </div>
         </article>
     </section>
+    </main>
     <footer>
         <div class="footer-left">
             <p>&copy; 2024 White Water Rafting. All Rights Reserved. Designed by Alighieri Vergara.</p>

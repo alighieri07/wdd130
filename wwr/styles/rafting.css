@@ -8,7 +8,7 @@
 header {
     display: grid; 
     grid-template-columns: 2fr auto 1fr;
-    align-items: center; 
+    align-items: center;
     padding: 20px; 
     width: 100%;
 }
@@ -330,9 +330,9 @@ button:hover {
     background-color: var(--secondary-color); 
 } 
 
-iframe {
-    width: 650px;  
-    height: 200px; 
+.iframe-style {
+    width: 650px;
+    height: 200px;
     border: none;
     margin-top: 3rem;
 }
